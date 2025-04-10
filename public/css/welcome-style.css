@@ -1,0 +1,117 @@
+/* Reset some base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/campus-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container holds everything */
+.container {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+    padding: 2rem;
+}
+
+/* Header and logo */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002b5c;
+    padding: 1rem 2rem;
+}
+
+.header-container h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+}
+
+#logo {
+    height: 50px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #003366;
+    padding: 0.8rem 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero section */
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 3rem auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Start Booking Button */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ffcc00;
+    color: #002b5c;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #002b5c;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: relative;
+}

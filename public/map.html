@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map - UNCG EV’s</title>
+
+    <!-- Meta Tags -->
+    <meta content="UNCG EV's Map" property="og:title" />
+    <meta content="#00008B" name="theme-color" />
+
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/map-style.css">
+    <link rel="stylesheet" href="css/chat.css">
+
+    <!-- Leaflet.js Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <!-- Scripts -->
+    <script src="js/index.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/chat.js" defer></script>
+
+    <!-- External Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img id="logo" src="images/uncg_hrzntl-svg.png" alt="UNCG Logo">
+            </a>
+            <h2 class="site-title">UNCG EV’s</h2>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="welcome.html">HOME</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="booking.html">My Booking</a></li>
+            <li><a href="issue_report.html">Report Issues</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main class="hero-content">
+        <h2>Find EV Charging Stations at UNCG</h2>
+        <div class="content">
+            <div id="map"></div>
+
+            <div class="chat-container">
+                <div class="chat-window">
+                    <div id="messages"></div>
+                </div>
+                <div class="message-box">
+                    <input id="message-input" type="text" placeholder="Type a message..." />
+                    <button id="send-button">Send</button>
+                    <button id="clear-button">Clear Messages</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; UNCG EV’s</p>
+</footer>
+</body>
+
+</html>

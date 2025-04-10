@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Charging Station - UNCG EV’s</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/booking-style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2 class="site-title">UNCG EV’s</h2>
+        <nav>
+            <ul>
+                <li><a href="welcome.html">HOME</a></li>
+                <li><a href="map.html">MAP</a></li>
+                <li><a href="booking.html">MY BOOKING</a></li>
+                <li><a href="issue_report.html">Report Issues</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book a Charging Station</h2>
+
+        <div class="booking-instructions">
+            <p><strong>Step 1:</strong> Select date of your booking.</p>
+            <p><strong>Step 2:</strong> Select your charger.</p>
+            <p><strong>Step 3:</strong> Select start and end time (available times will show).</p>
+            <p><strong>Step 4:</strong> Click <strong>Book Now</strong> to confirm.</p>
+        </div>
+
+        <div class="booking-form">
+            <label for="bookingDate"><strong>Select Date:</strong></label>
+            <input type="date" id="bookingDate" required>
+
+            <label for="chargerSelect"><strong>Choose a Charging Station:</strong></label>
+            <select id="chargerSelect">
+                <option value="">Loading stations...</option>
+            </select>
+
+            <label for="startTime"><strong>Select Start Time:</strong></label>
+            <select id="startTime" disabled>
+                <option value="">Select a station first</option>
+            </select>
+
+            <label for="endTime"><strong>Select End Time:</strong></label>
+            <select id="endTime" disabled>
+                <option value="">Select a start time first</option>
+            </select>
+
+            <button id="bookNowBtn" onclick="submitBooking()">Book Now</button>
+        </div>
+
+        <h2>My Bookings</h2>
+        <table id="bookingTable">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Charging Station</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>© UNCG EV’s</p>
+    </footer>
+</div>
+
+<!-- ✅ Edit Booking Modal -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <h2>Edit Booking</h2>
+
+        <label for="editChargerSelect">Charging Station:</label>
+        <select id="editChargerSelect"></select>
+
+        <label for="editBookingDate">Date:</label>
+        <input type="date" id="editBookingDate">
+
+        <label for="editStartTime">Start Time:</label>
+        <select id="editStartTime"></select>
+
+        <label for="editEndTime">End Time:</label>
+        <select id="editEndTime"></select>
+
+        <button id="editBookingBtn">Update Booking</button>
+        <button onclick="closeEditModal()">Cancel</button>
+    </div>
+</div>
+
+<script src="js/booking.js"></script>
+</body>
+</html>

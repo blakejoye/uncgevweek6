@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - UNCG EVs</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script defer src="js/admin-dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>UNCG EV Admin</h2>
+    <ul>
+        <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="admin-chargers.html">Chargers</a></li>
+       <!-- <li><a href="admin-reservations.html">Reservations</a></li>-->
+        <li><a href="admin-maintenance.html">Maintenance</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="top-nav">
+        <h1>Admin Dashboard</h1>
+    </div>
+
+    <div class="dashboard">
+        <div class="dashboard-cards">
+            <div class="card">
+                <p id="activeChargersCount">Loading...</p>
+                <p>Active Chargers</p>
+            </div>
+            <div class="card">
+                <p id="upcomingReservationsCount">Loading...</p>
+                <p>Upcoming Reservations</p>
+            </div>
+            <div class="card">
+                <p id="reportedIssuesCount">Loading...</p>
+                <p>Reported Issues</p>
+            </div>
+            <div class="card">
+                <p id="openTicketsCount">Loading...</p>
+                <p>Open Tickets</p>
+            </div>
+            <div class="card">
+                <p id="registeredUsersCount">Loading...</p>
+                <p>Registered Users</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance Report Status</h3>
+            <canvas id="maintenanceStatusChart"></canvas>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

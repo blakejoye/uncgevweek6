@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up - UNCG EV’s</title>
+    <meta content="UNCG's EV" property="og:title" />
+    <meta content="#00008B" name="theme-color" />
+
+    <!-- Fonts & Styles -->
+    <link rel="stylesheet" href="css/signup-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;500&display=swap" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="js/signup.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img id="logo" src="images/uncg_hrzntl-svg.png" alt="UNCG Logo" />
+            </a>
+            <h2 class="site-title">UNCG EV’s</h2>
+        </div>
+    </header>
+
+    <main class="hero-content">
+        <div id="signup-form-container">
+            <h2>Create an Account</h2>
+            <form id="signup-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required />
+
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+
+            <p id="error-message" style="color: red; display: none;"></p>
+            <p>Already have an account? <a href="index.html">Log in here</a>.</p>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; UNCG EV’s</p>
+</footer>
+</body>
+</html>
